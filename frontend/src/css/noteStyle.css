@@ -1,0 +1,35 @@
+.noteCardContainer {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 6vw;
+    width: 25vw;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.noteCardWrapper {
+    cursor: pointer;
+    white-space: pre-line;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    padding: 2%;
+    width: 85%;
+}
+
+.deleteButtonWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.deleteButton {
+    width: 30px;
+    height: 30px;
+    color: red;
+    cursor: pointer;
+    padding-right: 15px;
+}

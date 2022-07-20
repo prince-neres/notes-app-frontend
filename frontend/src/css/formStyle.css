@@ -1,0 +1,113 @@
+body{
+    background-color: #646464;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.notesInputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+}
+
+
+.fieldInput{
+    width: 20vw;
+    height: 2vw;
+    font-size: 16px;
+    border: 1px solid #333;
+    text-align: center;
+}
+.fieldInput:focus {
+    outline: none !important;
+    border:1px solid #202020;
+}
+
+.fieldInput::placeholder{
+    text-align: left;
+    padding-left: 10px;
+}
+
+textarea {
+    padding: 12px 20px;
+    font-family: Arial, serif;
+    font-size: 16px;
+}
+
+.styledButton{
+    background: #45ab2c;
+    border: 2px solid #397320;
+    color: white;
+    margin: 0 1em;
+    padding: 0.25em 1em;
+    width: 8vw;
+    height: 3vw;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.styledButton:focus {
+    outline: none !important;
+    border:1px solid #202020;
+}
+
+.styledButton:disabled {
+    outline: none !important;
+    border:1px solid #333333;
+    background-color: #6b7e80;
+    cursor: wait;
+}
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.noteInputWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+}
+
+.togglePassword{
+    position: absolute;
+    cursor: pointer;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.errorSpan{
+    color: red;
+    text-align: center;
+    font-size: 16px;
+}
+
+.haveAccountP{
+    font-size: 13px;
+    margin-top: 2%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #fbfbfb; /* Blue */
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+    margin-top: 5%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
