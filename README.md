@@ -25,7 +25,7 @@ Eu (Prince Neres)
 * 1° Semana - Banco de dados, A construção do banco foi feita por meio do ORM do Flask SQLAlchemy.
 * 2° Semana - Desenvolvimento da API, a API foi desenvolvida com o framework do Python, Flask.
 * 3° Semana - Desenvolvimento do Frontend, o front da aplicação foi desenvolvido com a biblioteca do javascript React.Js.
-* 4° Semana - Melhorias e Ajustes, Execução de possíveis melhorias na aplicação com refatoração e formatação de código. 
+* 4° Semana - Melhorias e Ajustes, Foram de possíveis melhorias na aplicação com refatoração e formatação de código. 
 
 ### 8. LINGUAGENS DE PROGRAMAÇÃO 
 * [JavaScript](https://www.javascript.com/)
