@@ -1,7 +1,7 @@
 ## Sistema de notas :notebook_with_decorative_cover:
 
 ### 1. TEMA:
-Aplicação para guardar anotações.
+Aplicação para guardar anotações
 
 ### 2. MOTIVAÇÃO:
 A falta de um local para anotações de forma segura e rápida
