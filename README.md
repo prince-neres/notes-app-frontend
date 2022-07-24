@@ -10,11 +10,13 @@ A falta de um local para anotações de forma segura e rápida
 Local de fácil acesso para guardar anotações com rapidez  e segurança
 
 ### 4. AMBIENTE DE DESENVOLVIMENTO:
-* VS Code
+* [VS Code](https://code.visualstudio.com/)
 
 ### 5. FERRAMENTAS PARA O DESENVOLVIMENTO:
-* Git & GitHub
-* PostgreSQL & PgAdmin4
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [PgAdmin4](https://www.pgadmin.org/)
 
 ### 6. INTEGRANTES
 Eu (Prince Neres)
@@ -26,8 +28,8 @@ Eu (Prince Neres)
 * 4° Semana - Melhorias e Ajustes, Execução de possíveis melhorias na aplicação com refatoração e formatação de código. 
 
 ### 8. LINGUAGENS DE PROGRAMAÇÃO 
-* JavaScript
-* Python
+* [JavaScript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 
 ### 9. TECNOLOGIAS:
 #### Frontend
