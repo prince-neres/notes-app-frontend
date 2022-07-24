@@ -1,11 +1,13 @@
+## Sistema de notas :notebook_with_decorative_cover:
+
 ### 1. TEMA:
-* Aplicação para guardar anotações.
+Aplicação para guardar anotações.
 
 ### 2. MOTIVAÇÃO:
-* A falta de um local para anotações de forma segura e rápida
+A falta de um local para anotações de forma segura e rápida
 
 ### 3. VISÃO DE NEGÓCIO:
-* Local de fácil acesso para guardar anotações com rapidez  e segurança
+Local de fácil acesso para guardar anotações com rapidez  e segurança
 
 ### 4. AMBIENTE DE DESENVOLVIMENTO:
 * VS Code
@@ -15,7 +17,7 @@
 * PostgreSQL & PgAdmin4
 
 ### 6. INTEGRANTES
-* Eu (Prince Neres)
+Eu (Prince Neres)
 
 ### 7. SOLUÇÃO PARA PROBLEMAS IDENTIFICADOS:
 * 1° Semana - Banco de dados, A construção do banco foi feita por meio do ORM do Flask SQLAlchemy.
@@ -39,3 +41,17 @@
 * [Flask Cors](https://flask-cors.readthedocs.io/en/latest/)
 * [Flask JWT](https://flask-jwt-extended.readthedocs.io/en/stable/)
 * [Flask SQL Alchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+
+### Como rodar a aplicação:
+## Banco de Dados
+Atribuir à varável `app.config['SQLALCHEMY_DATABASE_URI']` a sua URI da base de dados
+
+### Backend
+1. `python3 -m venv venv`  
+2.  Linux `. venv/bin/activate`, Windows `venv\Scripts\activate`
+3. `pip install -r requirements.txt`  
+4. `python app.y`  
+
+### Frontend
+1. `npm i` ou `yarn` 
+2. `npm start` ou `yarn start`
