@@ -1,9 +1,17 @@
 ## Sistema de notas :notebook_with_decorative_cover:
 
-### PREVIEW
+### Previews
 <div align="center">
-	<img src="./frontend/public/notes_app.png" />
+	<h3>Login</h3>
+	<img src="./frontend/public/login.png" />
 </div>
+
+
+<div align="center">
+	<h3>Notas</h3>
+	<img src="./frontend/public/notes.png" />
+</div>
+
 
 ### 1. TEMA:
 Aplicação para guardar anotações
