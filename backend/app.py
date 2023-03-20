@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # Coonfigurações da API
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:val44@localhost/notes_app'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://prince:val44@localhost/notes_app'
 app.config['SECRET_KEY'] = os.urandom(12)
 app.config['JWT_SECRET_KEY'] = 'JWT_SECRET_KEY%#!@'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=1)
