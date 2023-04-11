@@ -1,8 +1,8 @@
-import React from 'react'
-import { Provider } from 'react-redux'
-import { PersistGate } from 'redux-persist/integration/react'
-import {persistor, store} from './redux/store'
-import Router from './navigation/router'
+import React from "react";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistor, store } from "./redux/store";
+import Router from "./navigation/router";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Router />
       </PersistGate>
     </Provider>
-  )
+  );
 }
 
-export default App
+export default App;
