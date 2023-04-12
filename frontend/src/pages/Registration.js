@@ -151,7 +151,7 @@ export default function Registration() {
 
   return (
     <div className="formContainer" onKeyPress={onKeyPress}>
-      <h1>Cadastrar</h1>
+      <h1 className="titleForm">Cadastrar</h1>
       <div className="inputWrapper">
         <input
           type="text"
@@ -216,13 +216,11 @@ export default function Registration() {
       </div>
 
       <button disabled={submit} className="styledButton" onClick={Registration}>
-        Cadastrar
+        {submit ? <div className="loader"></div> : "Cadastrar"}
       </button>
       <Link to="/login" className="haveAccountP">
         Você não tem uma conta? Cadastrar
       </Link>
-
-      {submit ? <div className="loader"></div> : null}
     </div>
   );
 }

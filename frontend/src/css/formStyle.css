@@ -1,5 +1,5 @@
 body {
-  background-color: #646464;
+  background-color: #2a303c;
 }
 
 .formContainer {
@@ -20,21 +20,28 @@ body {
   margin: 1%;
 }
 
-.fieldInput {
-  width: 20vw;
-  height: 2vw;
-  font-size: 16px;
-  border: 1px solid #333;
-  text-align: center;
+.titleForm {
+  color: #a6adbb;
 }
+
+.fieldInput {
+  margin-bottom: 10px;
+  width: 250px;
+  height: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
 .fieldInput:focus {
   outline: none !important;
   border: 1px solid #202020;
 }
 
 .fieldInput::placeholder {
-  text-align: left;
-  padding-left: 10px;
+  font-weight: bold;
 }
 
 textarea {
@@ -44,21 +51,22 @@ textarea {
 }
 
 .styledButton {
-  background: #45ab2c;
-  border: 2px solid #397320;
+  background: #1eb854;
+  border: none;
+  border-radius: 5px;
   color: white;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  width: 8vw;
-  height: 3vw;
+  padding: 10px;
+  margin: 10px 0 15px;
+  width: 150px;
+  height: 50px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.styledButton:focus {
-  outline: none !important;
-  border: 1px solid #202020;
+.styledButton:hover {
+  background: #1fd65f;
+  transition-duration: 0.2s;
 }
 
 .styledButton:disabled {
@@ -73,6 +81,22 @@ textarea {
   margin-bottom: 3%;
 }
 
+.noteInput {
+  margin: 30px 0 10px;
+  outline: none;
+  padding: 10px;
+  border: none;
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #efeae6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.noteInput::placeholder {
+  font-weight: bold;
+}
+
 .noteInputWrapper {
   display: flex;
   flex-direction: column;
@@ -80,10 +104,10 @@ textarea {
 }
 
 .togglePassword {
+  color: #a6adbb;
   position: absolute;
   cursor: pointer;
-  margin-top: 0.5vw;
-  margin-left: 0.5vw;
+  margin: 10px;
 }
 
 .errorSpan {
@@ -93,24 +117,30 @@ textarea {
 }
 
 .haveAccountP {
-  font-size: 13px;
+  font-size: 16px;
   margin-top: 2%;
+  text-decoration: none;
+  color: #1fb2a5;
+}
+
+.haveAccountP:hover {
+  color: aquamarine;
+  transition-duration: 0.2s;
 }
 
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #fbfbfb; /* Blue */
-  width: 60px;
-  height: 60px;
-  animation: spin 2s linear infinite;
-  margin-top: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: #e4e4ed;
+  border-right-color: #3a3a3a;
+  animation: s2 1s infinite linear;
+  margin: auto;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+@keyframes s2 {
+  to {
+    transform: rotate(1turn);
   }
 }

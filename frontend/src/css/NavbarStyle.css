@@ -1,21 +1,31 @@
 .navbarContainer {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
-  background-color: #333;
+  background-color: #191d24;
 }
 
 .navbarWrapper {
   float: left;
+  display: flex;
+  align-items: baseline;
+}
+
+.navIcon {
+  color: #a6adbb;
+  vertical-align: center;
+  margin-right: 5px;
 }
 
 .LinkToWrapper {
   display: block;
-  color: white;
+  color: #a6adbb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 5px;
+  transition-duration: 0.2s;
 }
 
 .usernameWrapper {
@@ -23,14 +33,17 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: #51dfe0;
+  font-weight: bold;
+  color: #d926aa;
 }
 
 .LinkToWrapper:hover {
-  background-color: #111;
+  font-weight: bold;
+  background-color: #2a303c;
+  color: white;
 }
 
-.LinkToWrapperLogout{
+.LinkToWrapperLogout {
   position: absolute;
   right: 0;
   display: block;
@@ -39,4 +52,5 @@
   padding: 14px 16px;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 10px;
 }

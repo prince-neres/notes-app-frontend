@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/noteStyle.css";
-import { AiOutlineDelete } from "react-icons/ai";
+import { IoMdTrash } from "react-icons/io";
 
 export default function Note(props) {
   return (
@@ -12,7 +12,7 @@ export default function Note(props) {
         <span>{props.item.text.replace(/\\n/g, "\n")}</span>
       </div>
       <div className="deleteButtonWrapper">
-        <AiOutlineDelete
+        <IoMdTrash
           onClick={() => props.deleteNote(props.item)}
           className="deleteButton"
           disabled={true}

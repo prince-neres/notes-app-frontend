@@ -123,7 +123,7 @@ export default function LoginPage() {
   };
   return (
     <div className="formContainer" onKeyPress={onKeyPress}>
-      <h1>Entrar</h1>
+      <h1 className="titleForm">Entrar</h1>
 
       <div className="inputWrapper">
         <input
@@ -161,7 +161,7 @@ export default function LoginPage() {
         ) : null}
       </div>
       <button disabled={submit} className="styledButton" onClick={login}>
-        Entrar
+        {submit ? <div className="loader"></div> : "Entrar"}
       </button>
       <Link to="/registration" className="haveAccountP">
         Você não tem uma conta? Cadastrar
@@ -169,7 +169,6 @@ export default function LoginPage() {
       <Link to="/recovery" className="haveAccountP">
         Esqueceu sua senha? Clique aqui
       </Link>
-      {submit ? <div className="loader"></div> : null}
     </div>
   );
 }

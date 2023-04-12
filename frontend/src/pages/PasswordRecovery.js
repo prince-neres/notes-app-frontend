@@ -112,7 +112,7 @@ export default function PasswordRecovery() {
         </h1>
       ) : (
         <div className="formContainer">
-          <h1>Recuperação de Senha</h1>
+          <h1 className="titleForm">Recuperação de Senha</h1>
           <div className="inputWrapper">
             <input
               type="email"
@@ -145,12 +145,11 @@ export default function PasswordRecovery() {
             className="styledButton"
             onClick={passwordRecoveryAPI}
           >
-            Enviar
+            {submit ? <div className="loader"></div> : "Enviar"}
           </button>
           <Link to="/login" className="haveAccountP">
             Você não tem uma conta? Cadastrar
           </Link>
-          {submit ? <div className="loader"></div> : null}
         </div>
       )}
     </div>

@@ -59,7 +59,7 @@ export default function AddNote() {
     <div className="notesInputContainer">
       <div className="noteInputWrapper">
         <textarea
-          className="fieldInput"
+          className="noteInput"
           value={noteText}
           placeholder={"Adicionar nota"}
           onChange={handleNoteChange}

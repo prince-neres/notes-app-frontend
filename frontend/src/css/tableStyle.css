@@ -1,9 +1,10 @@
 .notes {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 600px;
-  overflow: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0 30px;
 }
 
 /* width */

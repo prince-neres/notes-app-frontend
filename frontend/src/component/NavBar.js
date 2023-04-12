@@ -1,5 +1,5 @@
 import { Link, useHistory } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { GetData } from "../services/api";
 import { SetLogout } from "../redux/actions/auth_actions";
@@ -31,7 +31,7 @@ export default function NavBar() {
     return (
       <ul className="navbarContainer">
         <li className="navbarWrapper">
-          <span className="usernameWrapper">Olá {auth.username}!</span>
+          <span className="usernameWrapper">Olá {auth.username}</span>
         </li>
         <li className="navbarWrapper">
           <Link className="LinkToWrapper" to="/home">
@@ -39,7 +39,7 @@ export default function NavBar() {
           </Link>
         </li>
         <li className="navbarWrapper">
-          <span className="LinkToWrapperLogout" onClick={logout}>
+          <span className="LinkToWrapperLogout LinkToWrapper" onClick={logout}>
             Sair
           </span>
         </li>
