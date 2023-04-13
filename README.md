@@ -3,13 +3,13 @@
 ### Previews
 <div align="center">
 	<h3>Login</h3>
-	<img src="./frontend/public/login.png" />
+	<img src="./public/login.png" />
 </div>
 
 
 <div align="center">
 	<h3>Notas</h3>
-	<img src="./frontend/public/notes.png" />
+	<img src="./public/notes.png" />
 </div>
 
 
