@@ -125,7 +125,7 @@ export default function Registration() {
               accessToken: res.data.accessToken,
             })
           );
-          return history.push("/home");
+          return history.push("/notes");
         } else {
           alert(res.data);
         }

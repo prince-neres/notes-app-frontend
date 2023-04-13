@@ -2,7 +2,7 @@ import axios from "axios";
 import { store } from "../redux/store";
 
 const ax = axios.create({
-  baseURL: "https://notes-app-backend-2djt.onrender.com/api/",
+  baseURL: "http://localhost:4000/api/",
   withCredentials: true,
 });
 

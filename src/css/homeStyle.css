@@ -1,0 +1,28 @@
+.home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+}
+
+h1 {
+  color: #a6adbb;
+}
+
+.author {
+  color: white;
+}
+
+.link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1fb2a5;
+}
+
+.link:hover {
+  color: aquamarine;
+  transition-duration: 0.2s;
+}
