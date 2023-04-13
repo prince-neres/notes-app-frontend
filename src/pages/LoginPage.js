@@ -98,7 +98,7 @@ export default function LoginPage() {
             SetLogin({ username: username, accessToken: res.data.accessToken })
           );
           // Redireciona para Home page
-          return history.push("/home");
+          return history.push("/notes");
         } else {
           alert(res.data.message);
           setSubmit(false);

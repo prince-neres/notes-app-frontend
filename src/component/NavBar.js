@@ -34,7 +34,7 @@ export default function NavBar() {
           <span className="usernameWrapper">Olá {auth.username}</span>
         </li>
         <li className="navbarWrapper">
-          <Link className="LinkToWrapper" to="/home">
+          <Link className="LinkToWrapper" to="/notes">
             Notas
           </Link>
         </li>

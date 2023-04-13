@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "../pages/HomePage";
+import NotesPage from "../pages/NotesPage";
 import LoginPage from "../pages/LoginPage";
 import Registration from "../pages/Registration";
 import PasswordRecovery from "../pages/PasswordRecovery";
@@ -15,7 +16,7 @@ function Router() {
   const Error = () => {
     return (
       <div>
-        <h1 className="title">Bem vindo ao Aplicativo!</h1>
+        <h1 className="title">Há algum erro...</h1>
       </div>
     );
   };
@@ -24,6 +25,12 @@ function Router() {
     <BrowserRouter>
       <NavBar />
       <Switch>
+        <PublicRoute
+          isLogged={auth.isLogged}
+          component={HomePage}
+          path="/"
+          exact
+        />
         <PublicRoute
           isLogged={auth.isLogged}
           component={LoginPage}
@@ -42,8 +49,8 @@ function Router() {
         />
         <PrivateRoute
           isLogged={auth.isLogged}
-          component={HomePage}
-          path="/home"
+          component={NotesPage}
+          path="/notes"
         />
         <Route component={Error} />
       </Switch>
