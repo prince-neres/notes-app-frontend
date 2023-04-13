@@ -39,6 +39,7 @@ export default function PasswordRecovery() {
 
   // Validação de E-mail
   const validateEmail = () => {
+    // eslint-disable-next-line no-useless-escape
     const emailValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
       form.email
     );

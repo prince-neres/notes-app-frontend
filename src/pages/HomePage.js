@@ -13,6 +13,7 @@ export default function HomePage() {
 
   useEffect(() => {
     getNotes();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Pega Notas
