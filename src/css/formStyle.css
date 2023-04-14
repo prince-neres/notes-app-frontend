@@ -31,7 +31,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
 }
 
@@ -46,14 +46,13 @@ body {
 
 textarea {
   padding: 12px 20px;
-  font-family: Arial, serif;
   font-size: 16px;
 }
 
 .styledButton {
   background: #1eb854;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   padding: 10px;
   margin: 10px 0 15px;
@@ -84,11 +83,11 @@ textarea {
 .noteInput {
   margin: 30px 0 10px;
   outline: none;
-  padding: 10px;
+  padding: 20px;
   border: none;
-  width: 250px;
+  width: 230px;
   height: 100px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #efeae6;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -137,6 +136,14 @@ textarea {
   border-right-color: #3a3a3a;
   animation: s2 1s infinite linear;
   margin: auto;
+}
+
+.green {
+  border-right-color: #1eb854;
+}
+
+.red {
+  border-right-color: red;
 }
 
 @keyframes s2 {

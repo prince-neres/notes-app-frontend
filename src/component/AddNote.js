@@ -73,7 +73,7 @@ export default function AddNote() {
         className="styledButton"
         onClick={AddNoteApiCall}
       >
-        Adicionar
+        {submit ? <div className="loader green"></div> : "Adicionar"}
       </button>
     </div>
   );

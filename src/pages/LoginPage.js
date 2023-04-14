@@ -162,7 +162,7 @@ export default function LoginPage() {
         ) : null}
       </div>
       <button disabled={submit} className="styledButton" onClick={login}>
-        {submit ? <div className="loader"></div> : "Entrar"}
+        {submit ? <div className="loader green"></div> : "Entrar"}
       </button>
       <Link to="/registration" className="haveAccountP">
         Você não tem uma conta? Cadastrar
