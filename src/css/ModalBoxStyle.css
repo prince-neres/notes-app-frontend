@@ -1,3 +1,4 @@
+/* eslint-disable */
 .modal {
   position: fixed;
   top: 0;
@@ -21,17 +22,16 @@
 .modal_change_note {
   border-radius: 10px;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  justify-content: start;
   background-color: #efeae6;
   width: auto;
   min-height: 250px;
-  align-items: end;
 }
 
 .modal_icons {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -52,6 +52,7 @@
 .modal_edit_actions {
   z-index: 1;
   display: flex;
+  justify-content: flex-end;
   gap: 15px;
   margin: 20px;
 }
