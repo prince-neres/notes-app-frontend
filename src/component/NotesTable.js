@@ -15,9 +15,11 @@ export default function NotesTable() {
   const [submit, setSubmit] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [modal, setModal] = useState({});
+  const [editMode, setEditMode] = useState(false);
 
   const closeModalBox = () => {
     setShowModal(false);
+    setEditMode(false);
     setModal({});
   };
 
@@ -28,6 +30,7 @@ export default function NotesTable() {
 
   // Deleta nota
   const DeleteNoteApiCall = async (body) => {
+    setSubmit(true);
     try {
       const res = await PostData("delete/note", body);
       if (res.status === 200) {
@@ -55,15 +58,28 @@ export default function NotesTable() {
       }
     }
   };
+
   return (
     <div className="notes">
       {showModal ? (
-        <ModalBox closeModalBox={closeModalBox} modal={modal} />
+        <ModalBox
+          closeModalBox={closeModalBox}
+          modal={modal}
+          editMode={editMode}
+          setEditMode={setEditMode}
+          history={history}
+          main={main}
+          dispatch={dispatch}
+          setSubmit={setSubmit}
+          setNotes={setNotes}
+        />
       ) : null}
       {main.noteList.map((item) => (
         <Note
           key={item.id}
           item={item}
+          editMode={editMode}
+          setEditMode={setEditMode}
           submit={submit}
           showModalBox={showModalBox}
           deleteNote={DeleteNoteApiCall}

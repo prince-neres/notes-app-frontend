@@ -217,7 +217,7 @@ export default function Registration() {
       </div>
 
       <button disabled={submit} className="styledButton" onClick={Registration}>
-        {submit ? <div className="loader"></div> : "Cadastrar"}
+        {submit ? <div className="loader green"></div> : "Cadastrar"}
       </button>
       <Link to="/login" className="haveAccountP">
         Você não tem uma conta? Cadastrar

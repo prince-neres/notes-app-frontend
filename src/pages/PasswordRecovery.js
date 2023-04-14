@@ -146,7 +146,7 @@ export default function PasswordRecovery() {
             className="styledButton"
             onClick={passwordRecoveryAPI}
           >
-            {submit ? <div className="loader"></div> : "Enviar"}
+            {submit ? <div className="loader green"></div> : "Enviar"}
           </button>
           <Link to="/login" className="haveAccountP">
             Você não tem uma conta? Cadastrar

@@ -4,29 +4,68 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.669);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal__window {
-  display: flex;
-  flex-direction: column;
-  text-align: end;
-  position: relative;
+.modal_window {
   background-color: #efeae6;
-  border-radius: 5px;
-  width: 250px;
-  height: auto;
-  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  min-height: 300px;
+  padding: 20px;
 }
 
-.modal__close {
+.modal_change_note {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #efeae6;
+  width: auto;
+  min-height: 250px;
+  align-items: end;
+}
+
+.modal_icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.modal_close {
   cursor: pointer;
   width: 30px;
   height: 30px;
   color: red;
+}
+
+.modal_edit {
+  padding-right: 10px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  color: rgb(0, 110, 255);
+}
+.modal_edit_actions {
+  z-index: 1;
+  display: flex;
+  gap: 15px;
+  margin: 20px;
+}
+
+.modal_save_button:hover {
+  background: #1fd65f;
+  transition-duration: 0.2s;
+}
+
+.modal_save {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: #1eb854;
 }
 
 .modal_text {
@@ -34,4 +73,34 @@
   white-space: pre-line;
   text-align: justify;
   overflow: auto;
+}
+
+.modal_textarea {
+  background-color: #efeae6;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+  width: 350px;
+  min-height: 250px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal_window {
+    width: 250px;
+    min-height: 300px;
+    padding: 20px;
+  }
+
+  .modal_change_note {
+    width: 250px;
+    min-height: 250px;
+  }
+
+  .modal_textarea {
+    width: 200px;
+    min-height: 250px;
+  }
 }
