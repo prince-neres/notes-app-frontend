@@ -1,6 +1,6 @@
 ## Sistema de notas :notebook_with_decorative_cover:
 
-:warning: A lentidão no app se deve ao fato de estar hospedada em máquinas de plataformas cloud com planos gratuítos. :warning:
+:warning: A lentidão no app se deve ao fato de estar hospedada em máquinas de plataformas cloud com planos gratuítos.
 
 ### Previews
 <div align="center">
@@ -60,14 +60,6 @@ Eu (Prince Neres)
 * [Flask SQL Alchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
 
 ### Como rodar a aplicação:
-## Banco de Dados
-Atribuir à varável `app.config['SQLALCHEMY_DATABASE_URI']` a sua URI da base de dados
-
-### Backend
-1. `python3 -m venv venv`  
-2.  Linux `. venv/bin/activate`, Windows `venv\Scripts\activate`
-3. `pip install -r requirements.txt`  
-4. `python app.y`  
 
 ### Frontend
 1. `npm i` ou `yarn` 
