@@ -1,5 +1,7 @@
 ## Sistema de notas :notebook_with_decorative_cover:
 
+:warning: A lentidão no app se deve ao fato de estar hospedada em máquinas de plataformas cloud com planos gratuítos. :warning:
+
 ### Previews
 <div align="center">
 	<h3>Login</h3>
