@@ -220,7 +220,7 @@ export default function Registration() {
         {submit ? <div className="loader green"></div> : "Cadastrar"}
       </button>
       <Link to="/login" className="haveAccountP">
-        Você não tem uma conta? Cadastrar
+        Já possui conta? Entrar
       </Link>
     </div>
   );

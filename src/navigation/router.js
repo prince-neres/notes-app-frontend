@@ -9,14 +9,17 @@ import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 import NavBar from "../component/NavBar";
 import { useSelector } from "react-redux";
+import "../css/errorMessage.css";
 
 function Router() {
   const auth = useSelector((state) => state.auth_reducers);
 
   const Error = () => {
     return (
-      <div>
-        <h1 className="title">Há algum erro...</h1>
+      <div className="containerError">
+        <h1 className="errorMessage">
+          &#9888;&#65039; Página não encontrada...
+        </h1>
       </div>
     );
   };

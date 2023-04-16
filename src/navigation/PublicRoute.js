@@ -13,7 +13,7 @@ const PublicRoute = ({
     <Route
       {...rest}
       render={(props) =>
-        IsLogged ? <Redirect to="/login" /> : <Component {...props} />
+        IsLogged ? <Redirect to="/notes" /> : <Component {...props} />
       }
     />
   );

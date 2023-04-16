@@ -1,0 +1,13 @@
+.containerError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.errorMessage {
+  text-align: center;
+  color: #a6adbb;
+  padding: 50px;
+  margin: auto 0;
+}
